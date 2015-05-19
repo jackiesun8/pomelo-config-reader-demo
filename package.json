@@ -1,0 +1,12 @@
+{
+  "name": "pomelo-config-reader-demo",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackiesun8/pomelo-config-reader-demo.git"
+  },
+  "dependencies": {
+    "pomelo-config-reader": "0.0.1"
+  }
+}
