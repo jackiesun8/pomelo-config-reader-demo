@@ -1,0 +1,5 @@
+﻿玩家模板id,玩家模板名称,初始钻石数量,初始金币数量,初始体力,体力上限,初始等级,最大等级,初始vip等级,拥有角色列表,拥有宠物列表,当前关卡id
+Int,String,Int,Int,Int,Int,Int,Int,Int,Array4Int,Array4String,Int
+玩家模板id,玩家模板名称,初始钻石数量,初始金币数量,初始体力,体力上限,初始等级,最大等级,初始vip等级,拥有角色列表,拥有宠物列表,当前关卡id
+id,name,init_diamond,init_gold,init_physic,physic_limit,init_level,max_level,init_vip_level,tmp_role_id_list_role,tmp_role_id_list_pet,tmp_guard_id
+1,test,99999,99999,99999,99999,1,99999,1,10001|10002,12001|12002,1

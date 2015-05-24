@@ -14,25 +14,24 @@ var app = createApp();
 app.use(configReader, {
     watcher: {
         dir: __dirname + '/config/data',
-        idx: 'id',
-        interval: 3000,
-        nameRow: 1,
-        typeRow: 3,
-        ignoreRows: [2, 4],
-        indexColumn: 1
+        indexColumn: 1,
+        nameRow: 4,
+        typeRow: 2,
+        ignoreRows: [1, 3],
+        interval: 3000
     }
 });
 
 
 var cb = function() {
-    var heroInitConf = null;
+    var playerInitConf = null;
 
     var getConf = function() {
-        heroInitConf = app.get('configReader').get('Heroinit');
+        playerInitConf = app.get('configReader').get('Tmp_player');
     };
 
     var printConf = function() {
-        console.warn('\n', (new Date()).getTime(), ': heroInitConf = ', util.inspect(heroInitConf, {
+        console.warn('\n', (new Date()).getTime(), ': playerInitConf = ', util.inspect(playerInitConf, {
             showHidden: false,
             depth: null
         }));
@@ -42,11 +41,11 @@ var cb = function() {
     getConf();
     printConf();
 
-    console.warn("find hero record where the hero id is equal to 1");
-    var heroRecord = heroInitConf.findByFunc(function(ele) {
-        return ele.heroId == 1;
+    console.warn("find player record where the player id is equal to 1");
+    var playerRecord = playerInitConf.findByFunc(function(ele) {
+        return ele.id == 1;
     });
-    console.warn('\n', (new Date()).getTime(), ': heroRecord = ', util.inspect(heroRecord, {
+    console.warn('\n', (new Date()).getTime(), ': playerRecord = ', util.inspect(playerRecord, {
         showHidden: false,
         depth: null
     }));

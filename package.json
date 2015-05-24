@@ -7,6 +7,6 @@
     "url": "https://github.com/jackiesun8/pomelo-config-reader-demo.git"
   },
   "dependencies": {
-    "pomelo-config-reader": "0.0.1"
+    "pomelo-config-reader": "0.0.3"
   }
 }
